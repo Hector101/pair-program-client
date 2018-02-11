@@ -1,0 +1,65 @@
+.login-page {
+  background: url('../../../assets/img/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  margin: 0;
+
+  .login-page-overlay {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    margin: 0;
+
+    .g-signin-button {
+      display: inline-flex;
+      width: 250px;
+      height: 50px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+      position: relative;
+      top: 50%;
+      left: 45%;
+      margin: 0 auto;
+
+      .login-text {
+        display: inline-block;
+        background-color: rgb(47, 102, 206);
+        width: 250px;;
+        height: 50px;
+        font-family: Roboto, arial, sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        box-shadow: 0 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.2);
+        border: none;
+        text-align: center;
+        line-height: 3.42rem;
+        border-color: .218s;
+        box-shadow: .218s;
+        cursor: pointer;
+        color: #fff;
+        transition: background-color .218s;
+      }
+
+      .google-icon {
+        display: block;
+        background-color: rgb(242, 245, 248);
+        width: 70px;
+        height: 48.99px;
+        text-align: center;
+        margin-top: 0.1rem;
+        margin-left: 0.0625rem;
+        float: left;
+        border: none;
+        white-space: nowrap;
+
+        .fa-google {
+          color: rgb(206, 81, 59);
+          font-size: 1.7rem;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+  }
+}
