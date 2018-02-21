@@ -1,17 +1,17 @@
 const path = require('path');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
-const publicFolder = `${__dirname}/client/assets`;
-
+const publicFolder = `${__dirname}/assets`;
 module.exports = {
   devtool: 'source-map',
   entry: [
     'babel-polyfill',
-    path.resolve(__dirname, 'client/src/app.js'),
+    path.resolve(__dirname, 'src/app.js'),
   ],
   output: {
     path: publicFolder,
-    filename: './js/bundle.js',
+    filename: './js/[name].bundle.js',
+    chunkFilename: './js/[name].bundle.js',
     publicPath: '/'
   },
   module: {
@@ -75,7 +75,6 @@ module.exports = {
       filename: './css/main.css',
       disable: false,
       allChunks: true,
-    })
+    }),
   ]
-
 }

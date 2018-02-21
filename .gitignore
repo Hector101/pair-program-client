@@ -20,3 +20,4 @@ coverage
 .eslintcache
 .node_repl_history
 *.tgz
+.vscode

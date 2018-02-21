@@ -1,7 +1,9 @@
 module.exports = {
     extends: "plugin:vue/strongly-recommended",
-    "parserOptions": {
-      "ecmaVersion": 2017
+    parser: "vue-eslint-parser",
+    parserOptions: {
+      sourceType: "module",
+      parser: 'babel-eslint'
     },
     plugins: [
       "promise",

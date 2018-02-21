@@ -1,8 +1,13 @@
 <template>
   <div class="foo">
     {{ foo }}
-    <v-btn v-if="authValue == false" :to="{path:'login'}">Login</v-btn>
-    <v-btn :to="{path:'/dashboard'}">Dashboard</v-btn>
+    <v-btn
+      v-if="authValue == false"
+      :to="{path:'login'}"
+    >Login</v-btn>
+    <v-btn
+      :to="{path:'/dashboard'}"
+    >Dashboard</v-btn>
   </div>
 </template>
 
