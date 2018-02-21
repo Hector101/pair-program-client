@@ -3,9 +3,9 @@ import vueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 
 // Components
-import App from '../components/App/App.component';
-import Login from '../components/Login/Login.component';
-import Dashboard from '../components/Dashboard/Dashboard';
+const App = () => import(/* webpackChunkName: "appConponent" */ '../components/App/App.component');
+const Login = () =>   import(/* webpackChunkName: "loginComponent" */ '../components/Login/Login.component');
+const Dashboard = () => import(/* webpackChunkName: "dashboardComponent" */ '../components/Dashboard/Dashboard');
 
 // Check authentication status
 import { isAuthenticated } from '../api/login.api';

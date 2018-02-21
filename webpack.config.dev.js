@@ -10,11 +10,6 @@ const dotenv = new Dotenv({
 
 module.exports = {
   ...base,
-  ...base.module.rules.push({
-      enforce: 'pre',
-      test: /\.(js|vue)$/,
-      exclude: /node_modules/
-  }),
   ...base.plugins.push(
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
@@ -24,7 +19,7 @@ module.exports = {
     dotenv
   ),
   devServer: {
-    contentBase: './client/assets',
+    contentBase: './assets',
     port: 8080,
     historyApiFallback: true,
   },

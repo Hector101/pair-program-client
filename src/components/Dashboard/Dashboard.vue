@@ -1,6 +1,9 @@
 <template>
   <div class="editor-wrapper">
-    <v-toolbar dark color="primary">
+    <v-toolbar 
+      dark
+      color="primary"
+    >
       <v-toolbar-title class="white--text">Editor</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
@@ -14,22 +17,17 @@
       </v-btn>
     </v-toolbar>
     <div class="editor-container">
-      <div class="editor-sidebar" :class="toggleSideBar">
-        <h1>Side Bar</h1>
-      </div>
-      <div class="editor-content-section" :class="toggleSideBar">
-        <SplitEditor
-          :mode="selectedLanguage"
-          theme="monokai"
-          :splits="2"
-          className="editor"
-          :width="width"
-          :height="height"
-          :orientation="selectedOrientation"
-          name="editor"
-          :editorProps="{$blockScrolling: 'Infinity'}"
-        />
-      </div>
+      <SplitEditor
+        :mode="selectedLanguage"
+        theme="monokai"
+        :splits="2"
+        className="editor"
+        :width="width"
+        :height="height"
+        :orientation="selectedOrientation"
+        name="editor"
+        :editorProps="{$blockScrolling: 'Infinity'}"
+      />
     </div>
   </div>
 </template>
@@ -49,7 +47,7 @@
       width: '100%',
       height:"100vh",
       languages: ['java', 'javascript'],
-      selectedLanguage: 'java',
+      selectedLanguage: 'javascript',
       orientations: ['beside', 'below'],
       selectedOrientation: 'beside',
     }),
