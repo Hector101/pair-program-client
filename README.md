@@ -1,11 +1,12 @@
-### Pair Program
+# Pair Program Client
 
 ## Work In Progress (WIP).
 
 ## Description
-+ Built with Vue.js, Vuex, Apollo GraphQL Client, Sockets.
++ This is the client side built with Vue.js, Vuex, Apollo GraphQL Client, Socket.io.
 + Features:
-   +  Login with a Google account
+   + Login with a Google account
+   + Create a programming session with partner
 
 ## Benefits of using this app
 + Allows users to pair program in real time.
